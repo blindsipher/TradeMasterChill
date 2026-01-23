@@ -109,7 +109,7 @@ jupyter notebook  # Will automatically use Python 3.12 kernel
 - **Python 3.9** - Minimum supported version
 - **Python 3.10** - Fully supported
 - **Python 3.11** - Fully supported
-- **Python 3.12** - Fully supported ✅ (tested with 3.12.3, compatible through 3.12.12+)
+- **Python 3.12** - Fully supported ✅ (tested with 3.12.3, expected compatible with 3.12.12 and later 3.12.x versions)
 
 ## Migration Guide
 
