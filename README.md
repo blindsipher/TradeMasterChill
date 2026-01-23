@@ -90,6 +90,8 @@ We also provide a colab version of these tutorials that can be run directly. ([c
 - [Automatic feature generation](https://github.com/TradeMaster-NTU/TradeMaster/blob/1.0.0/tutorial/Tutorial9_Feature_Generation.ipynb)
 - [Financial data imputation with diffusion models](https://github.com/TradeMaster-NTU/TradeMaster/blob/1.0.0/tools/missing_value_imputation/run.py)
 - [Train RL agents with Alpha158 technical indicators](https://github.com/TradeMaster-NTU/TradeMaster/blob/1.0.0/tutorial/Tutorial8_Train_with_more_technical_indicators.ipynb)
+- **[OHLCV Data Upscaling Tool](tools/data_preprocessor/README_UPSCALER.md)** - Upscale 1-minute OHLCV data to higher timeframes (5m, 15m, 1h, 4h, 1d) for multi-timeframe trading strategies
+
 
 ## TradeMaster Sandbox
 - [White paper](https://github.com/TradeMaster-NTU/TradeMaster/blob/1.0.0/docs/source/tool/TradeMaster_Sandbox_whitepaper.pdf) 
