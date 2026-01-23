@@ -5,7 +5,7 @@
 
 <div>&nbsp;</div>
 
-[![Python 3.9+](https://shields.io/badge/python-3.9%2B%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.9+](https://shields.io/badge/python-3.9%2B%20%7C%203.12.12-blue.svg)](https://www.python.org/downloads/)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey)](Platform)
 [![License](https://img.shields.io/github/license/TradeMaster-NTU/TradeMaster)](License)
 [![Document](https://img.shields.io/badge/docs-latest-red)](https://trademaster.readthedocs.io/en/latest/)
@@ -65,7 +65,7 @@ __TradeMaster__ is composed of 6 key modules: 1) multi-modality market data of d
 
 
 ## Installation
-**🎉 Now with Python 3.12 Support!** TradeMaster is compatible with Python 3.9 through 3.12. See [PYTHON312_COMPATIBILITY.md](PYTHON312_COMPATIBILITY.md) for details.
+**🎉 Now with Python 3.12.12 Support!** TradeMaster is fully compatible with Python 3.9 through 3.12 (including 3.12.12). See [PYTHON312_COMPATIBILITY.md](PYTHON312_COMPATIBILITY.md) for details.
 
 Here are the installation tutorials for different operating systems and docker:
 - [Installation on Linux/Windows/MacOS](https://github.com/TradeMaster-NTU/TradeMaster/tree/1.0.0/installation/requirements.md)

@@ -19,6 +19,8 @@ gym
 gymnasium
 ray[rllib]>=2.31.0
 tensorflow>=2.16.1
+torch>=2.0.0
+torchvision>=0.15.0
 packaging
 kaleido==0.1.0
 h5py
