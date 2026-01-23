@@ -23,7 +23,7 @@ def test_mse():
     cfg = Config.fromfile(args.config)
 
     cfg = replace_cfg_vals(cfg)
-    if hasattr(args, 'verbose') and args.verbose==1:
+    if hasattr(args, 'verbose') and args.verbose == 1:
         print(cfg)
 
     loss = build_loss(cfg)

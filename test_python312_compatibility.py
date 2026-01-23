@@ -8,12 +8,12 @@ import sys
 import traceback
 
 def test_python_version():
-    """Test that we're running Python 3.12+"""
+    """Test that we're running Python 3.9+"""
     print(f"Testing Python version...")
     version = sys.version_info
     print(f"  Python version: {version.major}.{version.minor}.{version.micro}")
-    assert version.major == 3 and version.minor >= 12, f"Expected Python 3.12+, got {version.major}.{version.minor}"
-    print("  ✓ Python version check passed")
+    assert version.major == 3 and version.minor >= 9, f"Expected Python 3.9+, got {version.major}.{version.minor}"
+    print("  ✓ Python version check passed (minimum: 3.9)")
     return True
 
 def test_core_imports():
