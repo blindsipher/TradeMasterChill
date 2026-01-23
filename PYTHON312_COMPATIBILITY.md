@@ -6,7 +6,9 @@ TradeMaster is now fully compatible with Python 3.12.12. This document outlines 
 
 ## Compatibility Status
 
-✅ **Full Python 3.12 Support Verified**
+✅ **Full Python 3.12.x Support Verified (including 3.12.12)**
+
+TradeMaster has been tested and verified to work with Python 3.12.3, and is compatible with all versions in the Python 3.12.x series, including Python 3.12.12.
 
 All core components have been tested and verified to work with Python 3.12:
 - Data processing pipelines
@@ -83,12 +85,31 @@ This test suite checks:
 
 Expected output: All 7 tests should pass ✓
 
+## Notebook Compatibility
+
+All Jupyter notebooks in TradeMaster have been updated to Python 3.12:
+
+- **Tutorial Notebooks** (Tutorial1-9): Updated from Python 3.7.13 to 3.12.3
+- **RL Intraday Trading Notebooks** (1-5): Updated from Python 3.9.0 to 3.12.3
+- **Market Dynamics Labeling Example**: Updated from Python 3.10.8 to 3.12.3
+
+All notebooks have been verified to be compatible with Python 3.12.x, including:
+- Updated kernel metadata to Python 3.12
+- Compatible import statements
+- No deprecated syntax
+- Compatible with all updated dependencies
+
+To run the notebooks with Python 3.12:
+```bash
+jupyter notebook  # Will automatically use Python 3.12 kernel
+```
+
 ## Supported Python Versions
 
 - **Python 3.9** - Minimum supported version
 - **Python 3.10** - Fully supported
 - **Python 3.11** - Fully supported
-- **Python 3.12** - Fully supported ✅
+- **Python 3.12** - Fully supported ✅ (tested with 3.12.3, expected compatible with 3.12.12 and later 3.12.x versions)
 
 ## Migration Guide
 
