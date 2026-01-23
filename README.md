@@ -65,6 +65,8 @@ __TradeMaster__ is composed of 6 key modules: 1) multi-modality market data of d
 
 
 ## Installation
+**🎉 Now with Python 3.12 Support!** TradeMaster is compatible with Python 3.9 through 3.12. See [PYTHON312_COMPATIBILITY.md](PYTHON312_COMPATIBILITY.md) for details.
+
 Here are the installation tutorials for different operating systems and docker:
 - [Installation on Linux/Windows/MacOS](https://github.com/TradeMaster-NTU/TradeMaster/tree/1.0.0/installation/requirements.md)
 - [Installation with Docker](https://github.com/TradeMaster-NTU/TradeMaster/tree/1.0.0/installation/docker.md)
