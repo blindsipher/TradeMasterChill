@@ -2,14 +2,29 @@
 Example Usage of OHLCV Upscaler
 
 This script demonstrates common use cases for the OHLCV upscaling tool.
+Run from the repository root or adjust paths accordingly.
 """
 
 import pandas as pd
 from pathlib import Path
 import sys
+import os
 
-# Add tools directory to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Get repository root by looking for .git directory
+current = Path(__file__).resolve()
+repo_root = None
+for parent in current.parents:
+    if (parent / '.git').exists():
+        repo_root = parent
+        break
+
+if repo_root is None:
+    # Fallback: assume script is in tools/data_preprocessor/
+    repo_root = current.parents[2]
+
+# Add tools/data_preprocessor to path
+sys.path.insert(0, str(current.parent))
+
 from ohlcv_upscaler import OHLCVUpscaler
 
 
@@ -22,7 +37,6 @@ def example_1_basic_upscaling():
     upscaler = OHLCVUpscaler(verbose=True)
     
     # Find a 1m data file
-    repo_root = Path(__file__).resolve().parents[2]
     input_file = repo_root / 'MCL-1m_data_2020.parquet'
     
     if not input_file.exists():
@@ -43,7 +57,6 @@ def example_2_dataframe_upscaling():
     upscaler = OHLCVUpscaler(verbose=True)
     
     # Load 1m data
-    repo_root = Path(__file__).resolve().parents[2]
     input_file = repo_root / 'MGC-1m_data_2020.parquet'
     
     if not input_file.exists():
@@ -76,8 +89,6 @@ def example_3_compare_timeframes():
     print("EXAMPLE 3: Compare Timeframes")
     print("=" * 70)
     
-    repo_root = Path(__file__).resolve().parents[2]
-    
     # Load different timeframes
     files = {
         '1m': repo_root / 'MCL-1m_data_2020.parquet',
@@ -107,8 +118,6 @@ def example_4_multi_contract_analysis():
     print("EXAMPLE 4: Multi-Contract Analysis")
     print("=" * 70)
     
-    repo_root = Path(__file__).resolve().parents[2]
-    
     # Load 1h data for all contracts
     contracts = ['MCL', 'MGC', 'mes']
     
@@ -137,7 +146,6 @@ def example_5_validate_upscaling():
     
     upscaler = OHLCVUpscaler(verbose=False)
     
-    repo_root = Path(__file__).resolve().parents[2]
     df_1m = pd.read_parquet(repo_root / 'MCL-1m_data_2020.parquet')
     
     print("\nValidating upscaling to 5m...")

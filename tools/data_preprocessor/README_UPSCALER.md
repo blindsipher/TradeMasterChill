@@ -349,5 +349,5 @@ For questions or issues:
 ---
 
 **Version**: 1.0.0  
-**Last Updated**: January 2026  
+**Last Updated**: January 2024  
 **Maintainer**: TradeMaster Team

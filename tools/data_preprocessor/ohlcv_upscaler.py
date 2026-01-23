@@ -15,6 +15,7 @@ Supported Timeframes:
 - 15m: 15 minutes
 - 30m: 30 minutes
 - 1h: 1 hour
+- 2h: 2 hours
 - 4h: 4 hours
 - 1d: 1 day
 
@@ -325,8 +326,18 @@ Examples:
     # Get input files
     if args.all:
         # Find all *-1m*.parquet files in repository root
-        # Assuming script is in tools/data_preprocessor/
-        repo_root = Path(__file__).resolve().parents[2]
+        # Look for .git directory to find repository root
+        current = Path(__file__).resolve()
+        repo_root = None
+        for parent in current.parents:
+            if (parent / '.git').exists():
+                repo_root = parent
+                break
+        
+        if repo_root is None:
+            # Fallback: assume script is in tools/data_preprocessor/
+            repo_root = current.parents[2]
+        
         input_files = sorted(repo_root.glob('*-1m*.parquet'))
         
         if not input_files:
