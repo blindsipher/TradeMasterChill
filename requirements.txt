@@ -17,12 +17,12 @@ scikit_learn
 tslearn
 gym
 gymnasium
-ray[rllib]==1.13.0
-tensorflow==2.11.0
+ray[rllib]>=2.31.0
+tensorflow>=2.16.1
 packaging
 kaleido==0.1.0
 h5py
-pydantic==1.10.2
+pydantic>=2.0.0
 jupyter
 celery
 pika

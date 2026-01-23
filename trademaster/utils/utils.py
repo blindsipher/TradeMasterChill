@@ -4,8 +4,8 @@ import re
 
 import mmcv
 from mmcv import Config
-from mmcv.utils import Registry
-from mmcv.utils import print_log
+from mmcv.utils.registry import Registry
+from mmcv.utils.logging import print_log
 import numpy as np
 import prettytable
 import random
